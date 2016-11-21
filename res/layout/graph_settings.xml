@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:padding="5dp">
+	<LinearLayout android:layout_height="wrap_content"
+		android:id="@+id/LinearLayout01" android:orientation="horizontal"
+		android:layout_width="fill_parent" android:padding="3dp"
+		android:background="@drawable/grad_sg" android:layout_marginBottom="3dp">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/TextView02"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="Graph Type:" android:layout_marginTop="10dp"
+			android:textColor="@color/textColor"></TextView>
+
+		<RadioGroup android:id="@+id/graphType"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_marginLeft="20dp">
+			<RadioButton android:id="@+id/line" android:layout_width="wrap_content"
+				android:text="Line" android:layout_height="wrap_content"
+				android:textColor="@color/textColor"></RadioButton>
+			<RadioButton android:id="@+id/bar" android:layout_width="wrap_content"
+				android:text="Bar" android:layout_height="wrap_content"
+				android:textColor="@color/textColor"></RadioButton>
+		</RadioGroup>
+
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:id="@+id/LinearLayout02" android:padding="3dp"
+		android:background="@drawable/grad_sg" android:layout_marginBottom="3dp">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/TextView01"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_marginTop="10dp" android:text="Display Data in:"
+			android:textColor="@color/textColor"></TextView>
+		<RadioGroup android:id="@+id/DataType"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_marginRight="20dp">
+			<RadioButton android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/w"
+				android:text="Watt (W)" android:textColor="@color/textColor"></RadioButton>
+			<RadioButton android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/kw"
+				android:text="Kilo-Watt (KW)" android:textColor="@color/textColor"></RadioButton>
+		</RadioGroup>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/ly" android:layout_height="wrap_content"
+		android:orientation="vertical" android:padding="5dp"
+		android:background="@drawable/grad_sg" android:layout_width="match_parent"
+		android:layout_marginBottom="3dp">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/textView1"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="@color/textColor" android:text="Graph's Domain:"></TextView>
+		<LinearLayout android:id="@+id/ly5" android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:weightSum="1">
+			<Spinner android:layout_height="wrap_content"
+				android:layout_weight="1" android:layout_marginLeft="50dp"
+				android:layout_width="100dp" android:entries="@array/range"
+				android:id="@+id/spnRange" android:prompt="@string/updateP"></Spinner>
+			<TextView android:layout_height="wrap_content" android:id="@+id/textView2"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="Hours" android:textColor="@color/textColor"
+				android:paddingBottom="2dp" android:layout_marginTop="5dp"
+				android:layout_width="130dp"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:background="@drawable/grad_sg" android:id="@+id/LinearLayout03"
+		android:padding="5dp" android:orientation="vertical"
+		android:layout_width="match_parent">
+		<TextView android:layout_width="wrap_content" android:id="@+id/TextView04"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_height="wrap_content" android:textColor="@color/textColor"
+			android:text="Update graph every:"></TextView>
+		<LinearLayout android:layout_height="wrap_content"
+			android:id="@+id/LinearLayout04" android:layout_width="match_parent">
+			<Spinner android:layout_height="wrap_content"
+				android:layout_weight="1" android:layout_width="match_parent"
+				android:layout_marginLeft="50dp" android:id="@+id/spnUpdate"
+				android:entries="@array/update" android:prompt="@string/rangeP"></Spinner>
+			<TextView android:layout_marginTop="5dp" android:id="@+id/TextView03"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:textColor="@color/textColor" android:text="Minutes"
+				android:paddingBottom="2dp" android:layout_height="wrap_content"
+				android:layout_width="130dp"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/ly1" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:layout_marginTop="10dp" android:layout_marginLeft="40dp">
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/btnSaveG"
+			android:text="Save" android:width="80dp" android:layout_marginRight="20dp"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/btnCancelG"
+			android:text="Cancel" android:width="80dp"></Button>
+	</LinearLayout>
+</LinearLayout>

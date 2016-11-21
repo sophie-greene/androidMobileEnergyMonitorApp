@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:padding="30dp">
+	<TextView android:text="API Key:" 
+		android:layout_width="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:id="@+id/textView1" 
+		android:layout_height="wrap_content" android:textColor="@color/textColor"></TextView>
+	<EditText android:layout_width="fill_parent" android:id="@+id/api"
+		android:layout_height="wrap_content"
+		android:maxWidth="200dip">
+		<requestFocus></requestFocus>
+	</EditText>
+	<TextView android:text="Environment ID or feed number:"
+		android:layout_width="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:id="@+id/textView2" 
+		android:layout_height="wrap_content" android:textColor="@color/textColor"></TextView>
+	<EditText android:layout_width="fill_parent" 
+		android:id="@+id/eID"
+		android:layout_height="wrap_content"></EditText>
+	<LinearLayout
+	    android:id="@+id/line"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" android:orientation="horizontal" android:layout_margin="10dp">
+	    <Button android:text="Save" android:id="@+id/btnSave" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginRight="20dp" android:layout_marginTop="10dp" android:layout_width="70dp"></Button>
+	    <Button android:id="@+id/btnCancel" android:layout_height="wrap_content" android:text="Cancel" android:layout_marginLeft="10dp" android:layout_marginRight="20dp" android:layout_marginTop="10dp" android:layout_width="70dp"></Button>
+	</LinearLayout>
+	
+</LinearLayout>

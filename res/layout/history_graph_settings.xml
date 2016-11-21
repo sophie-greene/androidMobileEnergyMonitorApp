@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:padding="5dp">
+	<LinearLayout android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="3dp" android:id="@+id/LinearLayout02" android:padding="3dp" android:background="@drawable/grad_sg" android:layout_width="fill_parent">
+		<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="10dp" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/TextView01" android:text="Display Data in:" android:textColor="@color/textColor"></TextView>
+		<RadioGroup android:layout_marginLeft="5dp" android:layout_height="wrap_content" android:id="@+id/RadioGroup02" android:layout_width="wrap_content">
+			<RadioButton android:text="Power (KW)" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/power" android:textColor="@color/textColor"></RadioButton>
+			<RadioButton android:text="Money (£)" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/money" android:textColor="@color/textColor"></RadioButton>
+			<RadioButton android:text="CO2 (KgCO2e)" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/co2" android:textColor="@color/textColor"></RadioButton>
+		</RadioGroup>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="3dp" android:id="@+id/LinearLayout03" android:padding="3dp" android:background="@drawable/grad_sg" android:layout_width="fill_parent">
+		<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="10dp" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/TextView03" android:text="Data Period:" android:textColor="@color/textColor"></TextView>
+		<RadioGroup android:layout_height="wrap_content" android:id="@+id/RadioGroup01" android:layout_width="wrap_content" android:layout_marginLeft="30dp">
+			<RadioButton android:text="Hours" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/hrs" android:textColor="@color/textColor"></RadioButton>
+			<RadioButton android:text="Days" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/dys" android:textColor="@color/textColor"></RadioButton>
+			<RadioButton android:text="Weeks" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/wks" android:textColor="@color/textColor"></RadioButton>
+			<RadioButton android:text="Months" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/mnths" android:textColor="@color/textColor"></RadioButton>
+		</RadioGroup>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/ly1" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:layout_marginTop="10dp" android:layout_marginLeft="40dp">
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Save" android:width="80dp" android:id="@+id/btnSaveH" android:layout_marginRight="20dp"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Cancel" android:width="80dp" android:id="@+id/btnCancelH"></Button>
+	</LinearLayout>
+</LinearLayout>

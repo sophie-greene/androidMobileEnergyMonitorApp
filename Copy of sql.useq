@@ -1,0 +1,188 @@
+<sequence-diagram version="1.0.4" icons="true">  
+  <object id="4" language="java" name="com.ide.green.DHistory" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/DHistory.java" binary="false" label="dHistory" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="3" y="0"/>    
+    <execution id="1">      
+      <position height="72" width="90" x="5" y="116"/>    
+    </execution>    
+    <execution id="2">      
+      <position height="72" width="90" x="5" y="150"/>    
+    </execution>    
+    <execution id="3">      
+      <position height="185" width="90" x="5" y="239"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="24" width="0" x="0" y="309"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="24" width="0" x="0" y="376"/>    
+    </execution>  
+  </object>  
+  <object id="9" language="java" name="com.androidplot.Plot" project="EnergyMonitor" 
+    file="/EnergyMonitor/lib/Androidplot-core-0.4.3-release.jar" binary="true" label="plt" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="1">      
+      <position height="24" width="0" x="0" y="261"/>    
+    </execution>  
+  </object>  
+  <object id="5" language="java" name="com.ide.green.DHistory.ArchiveReceiver" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/DHistory.java" binary="false" label="archiveReceiver" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="3" y="0"/>    
+    <execution id="1">      
+      <position height="24" width="146" x="99" y="174"/>    
+    </execution>    
+    <execution id="2">      
+      <position height="233" width="146" x="99" y="215"/>    
+    </execution>    
+    <execution id="3">      
+      <position height="348" width="146" x="462" y="113"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="24" width="0" x="0" y="353"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="24" width="0" x="0" y="413"/>    
+    </execution>  
+  </object>  
+  <object id="15" language="java" name="com.ide.green.DHistory" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/DHistory.java" binary="false" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>  
+  </object>  
+  <object id="1" language="java" name="com.ide.green.ArchiveService" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/ArchiveService.java" binary="false" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="46" y="0"/>    
+    <execution id="1">      
+      <position height="24" width="136" x="249" y="140"/>    
+    </execution>    
+    <execution id="2">      
+      <position height="72" width="136" x="612" y="191"/>    
+    </execution>    
+    <execution id="3">      
+      <position height="96" width="136" x="612" y="301"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="24" width="0" x="0" y="349"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="72" width="136" x="612" y="113"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="252" width="136" x="612" y="452"/>    
+    </execution>    
+    <execution id="7">      
+      <position height="24" width="0" x="0" y="500"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="24" width="0" x="0" y="656"/>    
+    </execution>    
+    <execution id="9">      
+      <position height="396" width="136" x="612" y="89"/>    
+    </execution>  
+  </object>  
+  <object id="10" language="java" name="android.content.Intent" project="EnergyMonitor" 
+    file="C:/android-sdk-windows/platforms/android-8/android.jar" binary="true" label="intent" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="1">      
+      <position height="24" width="0" x="0" y="536"/>    
+    </execution>    
+    <execution id="2">      
+      <position height="24" width="0" x="0" y="584"/>    
+    </execution>  
+  </object>  
+  <object id="2" language="java" name="com.ide.green.ArchiveService.LoadArchive" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/ArchiveService.java" binary="false" label="loadArchive" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="177" y="0"/>    
+    <execution id="1">      
+      <position height="24" width="116" x="752" y="137"/>    
+    </execution>    
+    <execution id="2">      
+      <position height="300" width="116" x="752" y="428"/>    
+    </execution>  
+  </object>  
+  <object id="3" language="java" name="com.ide.green.ArchiveService.MyBinder" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/ArchiveService.java" binary="false" label="myBinder" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="339" y="0"/>    
+    <execution id="1">      
+      <position height="24" width="95" x="872" y="215"/>    
+    </execution>    
+    <execution id="2">      
+      <position height="144" width="95" x="872" y="277"/>    
+    </execution>  
+  </object>  
+  <message operation="startService(android.content.Intent):android.content.ComponentName">    
+    <end type="SOURCE" nodeId="4" executionId="0"/>    
+    <end type="TARGET" nodeId="1" executionId="0"/>  
+  </message>  
+  <message operation="ArchiveReceiver()">    
+    <end type="SOURCE" nodeId="4" executionId="1"/>    
+    <end type="TARGET" nodeId="5" executionId="0"/>  
+  </message>  
+  <message operation="addSeries(SeriesType,java.lang.Class,FormatterType):boolean">    
+    <end type="SOURCE" nodeId="4" executionId="2"/>    
+    <end type="TARGET" nodeId="9" executionId="0"/>  
+  </message>  
+  <message operation="getPower():void">    
+    <end type="SOURCE" nodeId="4" executionId="2"/>    
+    <end type="TARGET" nodeId="4" executionId="3"/>  
+  </message>  
+  <message operation="plot():void">    
+    <end type="SOURCE" nodeId="4" executionId="2"/>    
+    <end type="TARGET" nodeId="4" executionId="4"/>  
+  </message>  
+  <message operation="loadDataFromProvider():void">    
+    <end type="SOURCE" nodeId="5" executionId="1"/>    
+    <end type="TARGET" nodeId="4" executionId="2"/>  
+  </message>  
+  <message operation="unregisterReceiver(android.content.BroadcastReceiver):void">    
+    <end type="SOURCE" nodeId="5" executionId="2"/>    
+    <end type="TARGET" nodeId="5" executionId="3"/>  
+  </message>  
+  <message operation="stopArchiveService():void">    
+    <end type="SOURCE" nodeId="5" executionId="2"/>    
+    <end type="TARGET" nodeId="5" executionId="4"/>  
+  </message>  
+  <message operation="MyBinder()">    
+    <end type="SOURCE" nodeId="1" executionId="1"/>    
+    <end type="TARGET" nodeId="3" executionId="0"/>  
+  </message>  
+  <message operation="onPostExecute(Result):void">    
+    <end type="SOURCE" nodeId="1" executionId="2"/>    
+    <end type="TARGET" nodeId="1" executionId="3"/>  
+  </message>  
+  <message operation="LoadArchive()">    
+    <end type="SOURCE" nodeId="1" executionId="4"/>    
+    <end type="TARGET" nodeId="2" executionId="0"/>  
+  </message>  
+  <message operation="onPostExecute(Result):void">    
+    <end type="SOURCE" nodeId="1" executionId="5"/>    
+    <end type="TARGET" nodeId="1" executionId="6"/>  
+  </message>  
+  <message operation="Intent(java.lang.String)">    
+    <end type="SOURCE" nodeId="1" executionId="5"/>    
+    <end type="TARGET" nodeId="10" executionId="0"/>  
+  </message>  
+  <message operation="putExtra(java.lang.String,java.lang.String):android.content.Intent">    
+    <end type="SOURCE" nodeId="1" executionId="5"/>    
+    <end type="TARGET" nodeId="10" executionId="1"/>  
+  </message>  
+  <message operation="sendBroadcast(android.content.Intent):void">    
+    <end type="SOURCE" nodeId="1" executionId="5"/>    
+    <end type="TARGET" nodeId="1" executionId="7"/>  
+  </message>  
+  <message operation="onReceive(android.content.Context,android.content.Intent):void">    
+    <end type="SOURCE" nodeId="1" executionId="8"/>    
+    <end type="TARGET" nodeId="5" executionId="2"/>  
+  </message>  
+  <message operation="announceServiceFinished():void">    
+    <end type="SOURCE" nodeId="2" executionId="1"/>    
+    <end type="TARGET" nodeId="1" executionId="5"/>  
+  </message>  
+  <message operation="onBind(android.content.Intent):android.os.IBinder">    
+    <end type="SOURCE" nodeId="3" executionId="1"/>    
+    <end type="TARGET" nodeId="1" executionId="2"/>  
+  </message>
+</sequence-diagram>

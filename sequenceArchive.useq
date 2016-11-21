@@ -1,0 +1,213 @@
+<sequence-diagram version="1.0.4" icons="true">  
+  <object id="1" language="java" name="com.ide.green.DHistoryct="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/DHistory.java" binary="false" label="detailedHistory" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="190" y="0"/>    
+    <execution id="1">      
+      <position height="72" width="136" x="5" y="118"/>    
+    </execution>    
+    <execution id="2">      
+      <position height="72" width="136" x="5" y="212"/>    
+    </execution>    
+    <execution id="3">      
+      <position height="72" width="136" x="5" y="328"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="72" width="136" x="5" y="448"/>    
+    </execution>  
+  </object>  
+  <object id="2" language="java" name="com.ide.green.com.ide.green.DHistoryject="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/DHistory.java" binary="false" label="archiveReceiver" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="190" y="0"/>    
+    <execution id="1">      
+      <position height="24" width="146" x="145" y="142"/>    
+    </execution>  
+  </object>  
+  <object id="10" language="java" name="com.ide.green.ArchiveService.MyBinder" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/ArchiveService.java" binary="false" label="myBinder" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="923" y="0"/>    
+    <execution id="1">      
+      <position height="24" width="95" x="389" y="137"/>    
+    </execution>    
+    <execution id="2">      
+      <position height="72" width="95" x="389" y="200"/>    
+    </execution>  
+  </object>  
+  <object id="3" language="java" name="com.ide.green.DHistory.MFormcom.ide.green.DHistory
+    file="/EnergyMonitor/src/com/ide/green/DHistory.java" binary="false" label="mFormat" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="190" y="0"/>    
+    <execution id="1">      
+      <position height="24" width="90" x="295" y="236"/>    
+    </execution>  
+  </object>  
+  <object id="4" language="java" name="com.ide.green.ArchiveService" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/ArchiveService.java" binary="false" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="484" y="0"/>    
+    <execution id="1">      
+      <position height="24" width="136" x="389" y="352"/>    
+    </execution>    
+    <execution id="2">      
+      <position height="24" width="136" x="389" y="472"/>    
+    </execution>    
+    <execution id="3">      
+      <position height="72" width="136" x="389" y="219"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="624" width="136" x="389" y="171"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="24" width="0" x="0" y="219"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="24" width="0" x="0" y="279"/>    
+    </execution>    
+    <execution id="7">      
+      <position height="72" width="136" x="488" y="113"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="24" width="136" x="488" y="224"/>    
+    </execution>  
+  </object>  
+  <object id="6" language="java" name="com.ide.green.GraphData" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/GraphData.java" binary="false" label="_data" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="1">      
+      <position height="24" width="0" x="0" y="315"/>    
+    </execution>    
+    <execution id="2">      
+      <position height="24" width="0" x="0" y="555"/>    
+    </execution>    
+    <execution id="3">      
+      <position height="24" width="0" x="0" y="651"/>    
+    </execution>  
+  </object>  
+  <object id="7" language="java" name="android.content.ContentResolver" project="EnergyMonitor" 
+    file="C:/android-sdk-windows/platforms/android-8/android.jar" binary="true" label="cr" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="1">      
+      <position height="24" width="0" x="0" y="363"/>    
+    </execution>    
+    <execution id="2">      
+      <position height="24" width="0" x="0" y="699"/>    
+    </execution>  
+  </object>  
+  <object id="8" language="java" name="android.database.Cursor" project="EnergyMonitor" 
+    file="C:/android-sdk-windows/platforms/android-8/android.jar" binary="true" label="c" type="interface" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="1">      
+      <position height="24" width="0" x="0" y="411"/>    
+    </execution>    
+    <execution id="2">      
+      <position height="24" width="0" x="0" y="747"/>    
+    </execution>  
+  </object>  
+  <object id="9" language="java" name="android.content.ContentValues" project="EnergyMonitor" 
+    file="C:/android-sdk-windows/platforms/android-8/android.jar" binary="true" label="values" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="1">      
+      <position height="24" width="0" x="0" y="459"/>    
+    </execution>    
+    <execution id="2">      
+      <position height="24" width="0" x="0" y="507"/>    
+    </execution>    
+    <execution id="3">      
+      <position height="24" width="0" x="0" y="603"/>    
+    </execution>  
+  </object>  
+  <object id="5" language="java" name="com.ide.green.ArchiveService.LoadArchiveTask" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/ArchiveService.java" binary="false" label="loadArchiveTask" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="484" y="0"/>    
+    <execution id="1">      
+      <position height="24" width="149" x="529" y="243"/>    
+    </execution>    
+    <execution id="2">      
+      <position height="672" width="149" x="529" y="147"/>    
+    </execution>  
+  </object>  
+  <message operation="ArchiveReceiver()">    
+    <end type="SOURCE" nodeId="1" executionId="0"/>    
+    <end type="TARGET" nodeId="2" executionId="0"/>  
+  </message>  
+  <message operation="MFormat()">    
+    <end type="SOURCE" nodeId="1" executionId="1"/>    
+    <end type="TARGET" nodeId="3" executionId="0"/>  
+  </message>  
+  <message operation="startService(android.content.Intent):android.content.ComponentName">    
+    <end type="SOURCE" nodeId="1" executionId="2"/>    
+    <end type="TARGET" nodeId="4" executionId="0"/>  
+  </message>  
+  <message operation="stopService(android.content.Intent):boolean">    
+    <end type="SOURCE" nodeId="1" executionId="3"/>    
+    <end type="TARGET" nodeId="4" executionId="1"/>  
+  </message>  
+  <message operation="onBind(android.content.Intent):android.os.IBinder">    
+    <end type="SOURCE" nodeId="10" executionId="1"/>    
+    <end type="TARGET" nodeId="4" executionId="7"/>  
+  </message>  
+  <message operation="LoadArchiveTask()" x="826" y="225">    
+    <end type="SOURCE" nodeId="4" executionId="2"/>    
+    <end type="TARGET" nodeId="5" executionId="0"/>  
+  </message>  
+  <message>    
+    <end type="SOURCE" nodeId="4" executionId="3"/>    
+    <end type="TARGET" nodeId="4" executionId="4"/>  
+  </message>  
+  <message operation="getContentResolver():android.content.ContentResolver" x="621" y="249">    
+    <end type="SOURCE" nodeId="4" executionId="3"/>    
+    <end type="TARGET" nodeId="4" executionId="5"/>  
+  </message>  
+  <message operation="getUpdatedTime():long">    
+    <end type="SOURCE" nodeId="4" executionId="3"/>    
+    <end type="TARGET" nodeId="6" executionId="0"/>  
+  </message>  
+  <message 
+    operation="query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String):android.database.Cursor">    
+    <end type="SOURCE" nodeId="4" executionId="3"/>    
+    <end type="TARGET" nodeId="7" executionId="0"/>  
+  </message>  
+  <message operation="getCount():int">    
+    <end type="SOURCE" nodeId="4" executionId="3"/>    
+    <end type="TARGET" nodeId="8" executionId="0"/>  
+  </message>  
+  <message operation="ContentValues()">    
+    <end type="SOURCE" nodeId="4" executionId="3"/>    
+    <end type="TARGET" nodeId="9" executionId="0"/>  
+  </message>  
+  <message operation="put(java.lang.String,java.lang.Long):void">    
+    <end type="SOURCE" nodeId="4" executionId="3"/>    
+    <end type="TARGET" nodeId="9" executionId="1"/>  
+  </message>  
+  <message operation="getUpdatedTime():long">    
+    <end type="SOURCE" nodeId="4" executionId="3"/>    
+    <end type="TARGET" nodeId="6" executionId="1"/>  
+  </message>  
+  <message operation="put(java.lang.String,java.lang.Double):void">    
+    <end type="SOURCE" nodeId="4" executionId="3"/>    
+    <end type="TARGET" nodeId="9" executionId="2"/>  
+  </message>  
+  <message operation="getValue1():double">    
+    <end type="SOURCE" nodeId="4" executionId="3"/>    
+    <end type="TARGET" nodeId="6" executionId="2"/>  
+  </message>  
+  <message operation="insert(android.net.Uri,android.content.ContentValues):android.net.Uri">    
+    <end type="SOURCE" nodeId="4" executionId="3"/>    
+    <end type="TARGET" nodeId="7" executionId="1"/>  
+  </message>  
+  <message operation="close():void">    
+    <end type="SOURCE" nodeId="4" executionId="3"/>    
+    <end type="TARGET" nodeId="8" executionId="1"/>  
+  </message>  
+  <message operation="MyBinder()" x="488" y="150">    
+    <end type="SOURCE" nodeId="4" executionId="6"/>    
+    <end type="TARGET" nodeId="10" executionId="0"/>  
+  </message>  
+  <message>    
+    <end type="SOURCE" nodeId="5" executionId="1"/>    
+    <end type="TARGET" nodeId="4" executionId="3"/>  
+  </message>
+</sequence-diagram>

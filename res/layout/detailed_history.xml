@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<ViewSwitcher android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:padding="5dp"
+		android:orientation="vertical" android:id="@+id/swtch_hd">
+		<LinearLayout android:layout_height="match_parent" android:orientation="vertical" android:id="@+id/lyout67" android:layout_width="fill_parent" android:weightSum="1">
+			<TextView android:layout_height="wrap_content" android:text="Loading History ..." android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView90" android:textColor="@color/textColor"></TextView>
+			<ProgressBar android:layout_marginTop="10dp" android:layout_marginLeft="50dp" android:layout_height="match_parent" style="?android:attr/progressBarStyleLarge" android:id="@+id/progressBar3" android:layout_width="wrap_content" android:background="@color/bgColor"></ProgressBar>
+		</LinearLayout>
+		<LinearLayout android:id="@+id/lyout908"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:layout_width="match_parent">
+			<TextView android:padding="5dp" style="@style/txt"
+				android:text="Consumption History" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:id="@+id/txtHistory" android:textColor="@color/textColor"></TextView>
+			<com.androidplot.xy.XYPlot android:id="@+id/plt1"
+				title="" android:layout_width="wrap_content" android:layout_height="250dp" android:background="@color/bgColor"/>
+			<Button android:layout_width="wrap_content" android:text="Graph Settings"
+				android:layout_height="wrap_content" android:id="@+id/btnGraphSettingsH"
+				android:height="40dp" android:layout_marginBottom="10dp"
+				android:layout_marginTop="5dp" android:layout_marginLeft="100dp"></Button>
+		</LinearLayout>
+
+
+	</ViewSwitcher>
+	<ViewSwitcher android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:id="@+id/swch_load">
+		<LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/linearLayout2" android:layout_width="match_parent">
+			<Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="load history" android:layout_marginLeft="115dp" android:id="@+id/btnHistory1"></Button>
+		</LinearLayout>
+		<LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">
+			<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView1" android:text="loading History...." android:textColor="@color/textColor"></TextView>
+			<ProgressBar android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge" android:id="@+id/progressBar1" android:layout_width="wrap_content" android:background="@color/bgColor"></ProgressBar>
+		</LinearLayout>
+		
+		</ViewSwitcher>
+
+
+</LinearLayout>

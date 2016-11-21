@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:padding="5dp">
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_marginBottom="3dp" android:id="@+id/LinearLayout02"
+		android:padding="3dp" android:background="@drawable/grad_sg"
+		android:layout_width="fill_parent" android:orientation="vertical">
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_marginTop="10dp"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/TextView01" android:text="Choose one of the following:" android:textColor="@color/textColor"></TextView>
+		<RadioGroup android:layout_marginLeft="5dp"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:baselineAligned="false" android:orientation="vertical"
+			android:id="@+id/RadioGroup0267">
+			<RadioButton android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:id="@+id/direct"
+				android:checked="true" android:layout_marginBottom="5dp"
+				android:text="Don't calculate for me" android:textColor="@color/textColor"></RadioButton>
+			<RadioButton android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:id="@+id/calculate"
+				android:text="Calculate for me" android:layout_marginBottom="5dp" android:textColor="@color/textColor"></RadioButton>
+		</RadioGroup>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:orientation="horizontal" android:layout_marginBottom="3dp"
+		android:id="@+id/LinearLayout03" android:padding="3dp"
+		android:background="@drawable/grad_sg" android:layout_width="fill_parent">
+		<ViewSwitcher android:layout_height="match_parent"
+			android:id="@+id/swchPrice" android:layout_width="match_parent">
+			<LinearLayout android:id="@+id/linearLayout1"
+				android:layout_width="match_parent" android:layout_height="match_parent"
+				android:orientation="horizontal" android:baselineAligned="true">
+				<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_height="wrap_content" android:id="@+id/t1"
+					android:layout_width="wrap_content" android:layout_marginTop="10dp"
+					android:layout_marginBottom="5dp" android:text="Price per KWH(Pence):" android:textColor="@color/textColor"></TextView>
+				<EditText android:layout_height="wrap_content"
+					android:layout_width="match_parent" android:layout_marginTop="10dp"
+					android:layout_marginBottom="5dp" android:id="@+id/penny">
+					<requestFocus></requestFocus>
+				</EditText>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/linearLayout2"
+				android:layout_width="match_parent" android:layout_height="match_parent"
+				android:orientation="vertical">
+				<TextView android:layout_height="wrap_content" android:id="@+id/textView1"
+					android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"
+					android:text="Use your most recent electricity bill to fill the following details:" android:textColor="@color/textColor"></TextView>
+				<LinearLayout android:id="@+id/ff"
+					android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="2dp">
+					<TextView android:id="@+id/textView2"
+						android:layout_height="wrap_content"
+						android:text="Cost(£):" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="150dp" android:textColor="@color/textColor"></TextView>
+					<EditText android:layout_height="wrap_content"
+						android:id="@+id/cost" android:layout_width="100dp"></EditText>
+				</LinearLayout>
+				<LinearLayout android:id="@+id/ff12"
+					android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="2dp">
+					<TextView android:id="@+id/textView2"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_height="wrap_content"
+						android:text="KWH's consumed:" android:layout_width="150dp" android:textColor="@color/textColor"></TextView>
+					<EditText android:layout_height="wrap_content"
+						android:id="@+id/noKWH" android:layout_width="100dp"></EditText>
+				</LinearLayout>
+			</LinearLayout>
+		</ViewSwitcher>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/ly1" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:layout_marginTop="10dp" android:layout_marginLeft="40dp">
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Save"
+			android:width="80dp" android:id="@+id/btnSavePr" android:layout_marginRight="20dp"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Cancel"
+			android:width="80dp" android:id="@+id/btnCancelPr"></Button>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,164 @@
+<sequence-diagram version="1.0.4" icons="true">  
+  <object id="1" language="java" name="com.ide.green.Main" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/Main.java" binary="false" label="energyMonitorActivity" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="231" y="0"/>    
+    <execution id="1">      
+      <position height="72" width="183" x="5" y="113"/>    
+    </execution>    
+    <execution id="2">      
+      <position height="72" width="183" x="5" y="193"/>    
+    </execution>    
+    <execution id="3">      
+      <position height="72" width="183" x="5" y="305"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="24" width="183" x="5" y="399"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="72" width="183" x="5" y="450"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="96" width="183" x="5" y="533"/>    
+    </execution>    
+    <execution id="7">      
+      <position height="24" width="183" x="5" y="581"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="24" width="183" x="5" y="638"/>    
+    </execution>  
+  </object>  
+  <object id="2" language="java" name="com.ide.green.Main.DataReceiver" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/Main.java" binary="false" label="dataReceiver" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="231" y="0"/>    
+    <execution id="1">      
+      <position height="24" width="124" x="192" y="137"/>    
+    </execution>  
+  </object>  
+  <object id="3" language="java" name="com.ide.green.Main.HistoryReceiver" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/Main.java" binary="false" label="historyReceiver" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="231" y="0"/>    
+    <execution id="1">      
+      <position height="24" width="142" x="320" y="153"/>    
+    </execution>    
+    <execution id="2">      
+      <position height="24" width="142" x="320" y="329"/>    
+    </execution>    
+    <execution id="3">      
+      <position height="72" width="142" x="320" y="564"/>    
+    </execution>  
+  </object>  
+  <object id="4" language="java" name="com.ide.green.HistoryService" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/HistoryService.java" binary="false" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="558" y="0"/>    
+    <execution id="1">      
+      <position height="24" width="132" x="466" y="217"/>    
+    </execution>    
+    <execution id="9">      
+      <position height="72" width="132" x="466" y="129"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="72" width="132" x="466" y="375"/>    
+    </execution>    
+    <execution id="11">      
+      <position height="24" width="132" x="466" y="474"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="72" width="132" x="418" y="252"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="24" width="132" x="418" y="329"/>    
+    </execution>  
+  </object>  
+  <object id="14" language="java" name="com.ide.green.HistoryService.LoadHistory" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/HistoryService.java" binary="false" label="loadHistory" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="553" y="0"/>    
+    <execution id="1">      
+      <position height="24" width="112" x="554" y="276"/>    
+    </execution>    
+    <execution id="2">      
+      <position height="72" width="112" x="554" y="305"/>    
+    </execution>  
+  </object>  
+  <object id="7" language="java" name="com.ide.green.DataService" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/DataService.java" binary="false" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="1042" y="0"/>    
+    <execution id="6">      
+      <position height="24" width="114" x="1104" y="588"/>    
+    </execution>    
+    <execution id="7">      
+      <position height="72" width="114" x="751" y="614"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="72" width="114" x="670" y="113"/>    
+    </execution>    
+    <execution id="9">      
+      <position height="24" width="114" x="670" y="220"/>    
+    </execution>  
+  </object>  
+  <object id="15" language="java" name="com.ide.green.DataService.LoadData" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/DataService.java" binary="false" label="loadData" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="791" y="0"/>    
+    <execution id="1">      
+      <position height="24" width="94" x="788" y="137"/>    
+    </execution>    
+    <execution id="2">      
+      <position height="72" width="94" x="788" y="196"/>    
+    </execution>  
+  </object>  
+  <message operation="DataReceiver()">    
+    <end type="SOURCE" nodeId="1" executionId="0"/>    
+    <end type="TARGET" nodeId="2" executionId="0"/>  
+  </message>  
+  <message operation="startService(android.content.Intent):android.content.ComponentName">    
+    <end type="SOURCE" nodeId="1" executionId="1"/>    
+    <end type="TARGET" nodeId="4" executionId="0"/>  
+  </message>  
+  <message operation="HistoryReceiver()">    
+    <end type="SOURCE" nodeId="1" executionId="2"/>    
+    <end type="TARGET" nodeId="3" executionId="1"/>  
+  </message>  
+  <message operation="stopService(android.content.Intent):boolean">    
+    <end type="SOURCE" nodeId="1" executionId="4"/>    
+    <end type="TARGET" nodeId="4" executionId="3"/>  
+  </message>  
+  <message operation="unregisterReceiver(android.content.BroadcastReceiver):void">    
+    <end type="SOURCE" nodeId="1" executionId="5"/>    
+    <end type="TARGET" nodeId="1" executionId="6"/>  
+  </message>  
+  <message operation="startService(android.content.Intent):android.content.ComponentName">    
+    <end type="SOURCE" nodeId="3" executionId="2"/>    
+    <end type="TARGET" nodeId="7" executionId="0"/>  
+  </message>  
+  <message operation="HistoryReceiver()">    
+    <end type="SOURCE" nodeId="4" executionId="1"/>    
+    <end type="TARGET" nodeId="3" executionId="0"/>  
+  </message>  
+  <message operation="sendBroadcast(android.content.Intent):void">    
+    <end type="SOURCE" nodeId="4" executionId="2"/>    
+    <end type="TARGET" nodeId="1" executionId="3"/>  
+  </message>  
+  <message operation="LoadHistory()">    
+    <end type="SOURCE" nodeId="4" executionId="4"/>    
+    <end type="TARGET" nodeId="14" executionId="0"/>  
+  </message>  
+  <message operation="addNewData(com.ide.green.GraphData):void">    
+    <end type="SOURCE" nodeId="14" executionId="1"/>    
+    <end type="TARGET" nodeId="4" executionId="5"/>  
+  </message>  
+  <message operation="sendBroadcast(android.content.Intent):void">    
+    <end type="SOURCE" nodeId="7" executionId="1"/>    
+    <end type="TARGET" nodeId="1" executionId="7"/>  
+  </message>  
+  <message operation="LoadData()">    
+    <end type="SOURCE" nodeId="7" executionId="2"/>    
+    <end type="TARGET" nodeId="15" executionId="0"/>  
+  </message>  
+  <message operation="addNewData(com.ide.green.GraphData):void">    
+    <end type="SOURCE" nodeId="15" executionId="1"/>    
+    <end type="TARGET" nodeId="7" executionId="3"/>  
+  </message>
+</sequence-diagram>

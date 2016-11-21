@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:orientation="horizontal" android:id="@+id/LinearLayout03"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<LinearLayout android:background="@drawable/grad"
+			android:padding="5dp" android:orientation="vertical" android:id="@+id/LinearLayout01"
+			android:layout_width="130dp" android:layout_height="wrap_content"
+			android:layout_marginBottom="5dp" android:layout_marginLeft="15dp"
+			android:layout_marginRight="15dp" android:layout_marginTop="15dp">
+			<TextView android:text="Monitoring" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" style="@style/txt" android:id="@+id/txtChannel"></TextView>
+			<TextView android:layout_height="wrap_content"
+				android:paddingLeft="10dp" android:layout_width="wrap_content"
+				style="@style/txt" android:text="Electrical meter" android:id="@+id/txtChannelDescription"></TextView>
+		</LinearLayout>
+		<LinearLayout android:background="@drawable/grad"
+			android:padding="5dp" android:orientation="vertical" android:id="@+id/LinearLayout02"
+			android:layout_width="130dp" android:layout_height="wrap_content"
+			android:layout_marginBottom="5dp" android:layout_marginLeft="15dp"
+			android:layout_marginRight="15dp" android:layout_marginTop="15dp">
+			<TextView android:text="Power Now" android:layout_height="wrap_content"
+				android:id="@+id/txtTitle" android:layout_width="wrap_content"
+				style="@style/txt"></TextView>
+			<TextView android:layout_height="wrap_content"
+				android:paddingLeft="10dp" android:id="@+id/txtPower"
+				android:layout_width="wrap_content" style="@style/txt"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/LinearLayout34"
+		android:orientation="horizontal" android:layout_height="wrap_content"
+		android:layout_width="fill_parent">
+		<LinearLayout android:background="@drawable/grad"
+			android:padding="5dp" android:orientation="vertical" android:id="@+id/LinearLayout4"
+			android:layout_width="130dp" android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+			<TextView android:text="Temperature Now"
+				android:layout_height="wrap_content" android:id="@+id/txtTitle1"
+				android:layout_width="wrap_content" style="@style/txt"
+				android:clickable="false"></TextView>
+			<TextView android:layout_height="wrap_content"
+				android:paddingLeft="10dp" android:id="@+id/txtTemp"
+				android:layout_width="wrap_content" style="@style/txt"></TextView>
+		</LinearLayout>
+		<LinearLayout android:background="@drawable/grad"
+			android:padding="5dp" android:orientation="vertical" android:id="@+id/LinearLayout3"
+			android:layout_width="130dp" android:layout_height="wrap_content"
+			android:layout_marginRight="15dp" android:layout_marginLeft="15dp">
+			<TextView android:text="Energy Today" android:layout_height="wrap_content"
+				android:id="@+id/txtTitle2" android:layout_width="wrap_content"
+				style="@style/txt"></TextView>
+			<TextView android:layout_height="wrap_content"
+				android:paddingLeft="10dp" android:id="@+id/txtCon"
+				android:layout_width="wrap_content" style="@style/txt"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:orientation="horizontal" android:id="@+id/LinearLayout06"
+		android:layout_width="fill_parent">
+		<LinearLayout android:background="@drawable/grad"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:id="@+id/LinearLayout05" android:layout_width="130dp"
+			android:padding="5dp" android:layout_marginBottom="5dp"
+			android:layout_marginLeft="15dp" android:layout_marginRight="15dp"
+			android:layout_marginTop="5dp">
+			<TextView android:layout_width="wrap_content" style="@style/txt"
+				android:layout_height="wrap_content" android:clickable="false"
+				android:id="@+id/TextView02" android:text="CO2 Today"></TextView>
+			<TextView android:layout_width="wrap_content" style="@style/txt"
+				android:paddingLeft="10dp" android:layout_height="wrap_content"
+				android:id="@+id/txtCo2"></TextView>
+		</LinearLayout>
+		<LinearLayout android:background="@drawable/grad"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:id="@+id/LinearLayout04" android:layout_width="130dp"
+			android:padding="5dp" android:layout_marginTop="5dp"
+			android:layout_marginRight="15dp" android:layout_marginLeft="15dp"
+			android:layout_marginBottom="5dp">
+			<TextView android:layout_width="wrap_content" style="@style/txt"
+				android:layout_height="wrap_content" android:id="@+id/TextView01"
+				android:text="Cost Today"></TextView>
+			<TextView android:layout_width="wrap_content" style="@style/txt"
+				android:paddingLeft="10dp" android:layout_height="wrap_content"
+				android:id="@+id/txtCost"></TextView>
+		</LinearLayout>
+
+	</LinearLayout>
+	<LinearLayout android:id="@+id/lyout"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<ViewSwitcher android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:padding="5dp"
+			android:orientation="vertical" android:id="@+id/swtch">
+				<LinearLayout android:id="@+id/lyout"
+				android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="match_parent" android:weightSum="1">
+				<TextView android:layout_width="wrap_content" android:id="@+id/textView2"
+					android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+					android:text="Loading ..." android:textColor="@color/textColor"></TextView>
+				<ProgressBar style="?android:attr/progressBarStyleLarge"
+					android:id="@+id/progressBar1" android:layout_height="match_parent" android:layout_marginLeft="50dp" android:layout_marginTop="10dp" android:layout_width="wrap_content" android:background="@color/bgColor"></ProgressBar>
+
+			</LinearLayout>
+			<LinearLayout android:id="@+id/lyout"
+				android:layout_height="wrap_content"
+				android:orientation="vertical" android:layout_width="match_parent">
+				<TextView android:padding="5dp" style="@style/txt"
+					android:text="Live Feed of Energy Usage" android:layout_height="wrap_content"
+					android:id="@+id/textView1" android:layout_width="wrap_content" android:textColor="@color/textColor"></TextView>
+				<com.androidplot.xy.XYPlot android:id="@+id/plt"
+					title="" android:layout_width="wrap_content" android:layout_height="150dp"/>
+				<Button android:layout_width="wrap_content" android:text="Graph Settings" android:layout_height="wrap_content" android:id="@+id/btnGraphSettings" android:height="40dp" android:layout_marginBottom="10dp" android:layout_marginTop="5dp" android:layout_marginLeft="100dp"></Button>
+			</LinearLayout>
+		
+
+		</ViewSwitcher>
+	</LinearLayout>
+
+</LinearLayout>

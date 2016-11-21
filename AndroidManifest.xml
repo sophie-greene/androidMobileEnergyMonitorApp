@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.ide.green" android:installLocation="auto" android:versionName="21.0" android:versionCode="21">
+	<uses-sdk android:minSdkVersion="8" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+		<activity android:name=".Main"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".Settings" android:label="Settings">
+		</activity>
+			<activity android:name=".Price" android:label="Electricity Prices">
+		</activity>
+		<activity android:name=".GSettings" android:label="Graph Settings"
+			>
+		</activity>
+		<activity android:name=".HGSettings" android:label="History Graph Settings"
+			>
+		</activity>
+		<activity android:name=".Appliance" android:label="Appliance">
+		</activity>
+		<activity android:name=".EditApp" android:label="Edit Appliance">
+		</activity>
+		<activity android:name=".DHistory" android:label="Energy Consumption Stats">
+		</activity>
+		<service android:enabled="true" android:name=".DataService" />
+		<service android:enabled="true" android:name=".HistoryService" />
+		<service android:enabled="true" android:name=".ArchiveService" />
+		<provider android:name=".DataProvider" android:authorities="com.ide.provider.green" />
+	</application>
+</manifest>

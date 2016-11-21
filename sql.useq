@@ -1,0 +1,74 @@
+<sequence-diagram version="1.0.4" icons="true">  
+  <object id="3" language="java" name="com.ide.green.Settings" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/Settings.java" binary="false" label="settings" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="441" y="0"/>  
+  </object>  
+  <object id="2" language="java" name="com.ide.green.Price" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/Price.java" binary="false" label="price" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="308" y="0"/>  
+  </object>  
+  <object id="11" language="java" name="com.ide.green.Appliance" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/Appliance.java" binary="false" label="appliance" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="369" y="0"/>    
+    <execution id="3">      
+      <position height="72" width="96" x="380" y="488"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="24" width="96" x="380" y="457"/>    
+    </execution>  
+  </object>  
+  <object id="15" language="java" name="com.ide.green.EditApp" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/EditApp.java" binary="false" label="editAppliance" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="473" y="0"/>    
+    <execution id="1">      
+      <position height="24" width="124" x="480" y="512"/>    
+    </execution>    
+    <execution id="2">      
+      <position height="72" width="124" x="480" y="433"/>    
+    </execution>  
+  </object>  
+  <object id="4" language="java" name="com.ide.green.GSettings" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/GSettings.java" binary="false" label="graphSettings" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="382" y="0"/>  
+  </object>  
+  <object id="12" language="java" name="com.ide.green.DHistory" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/DHistory.java" binary="false" label="detailedHistory" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="611" y="0"/>    
+    <execution id="3">      
+      <position height="72" width="136" x="742" y="379"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="24" width="136" x="742" y="492"/>    
+    </execution>  
+  </object>  
+  <object id="17" language="java" name="com.ide.green.HGSettings" project="EnergyMonitor" 
+    file="/EnergyMonitor/src/com/ide/green/HGSettings.java" binary="false" label="hGSettings" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="1067" y="0"/>    
+    <execution id="1">      
+      <position height="24" width="180" x="1006" y="403"/>    
+    </execution>    
+    <execution id="2">      
+      <position height="72" width="180" x="1006" y="468"/>    
+    </execution>  
+  </object>  
+  <message operation="startActivity(android.content.Intent):void">    
+    <end type="SOURCE" nodeId="11" executionId="0"/>    
+    <end type="TARGET" nodeId="15" executionId="0"/>  
+  </message>  
+  <message operation="startActivity(android.content.Intent):void">    
+    <end type="SOURCE" nodeId="15" executionId="1"/>    
+    <end type="TARGET" nodeId="11" executionId="1"/>  
+  </message>  
+  <message operation="startActivity(android.content.Intent):void">    
+    <end type="SOURCE" nodeId="12" executionId="0"/>    
+    <end type="TARGET" nodeId="17" executionId="0"/>  
+  </message>  
+  <message operation="startActivity(android.content.Intent):void">    
+    <end type="SOURCE" nodeId="17" executionId="1"/>    
+    <end type="TARGET" nodeId="12" executionId="1"/>  
+  </message>
+</sequence-diagram>
